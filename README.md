@@ -8,6 +8,7 @@ Tools on Mac:
 - shell: zsh + OhMyZsh shell configuration for easier usability
 - text editor: Visual Studio Code (VS Code)
 - virtualization: Docker
+- code repos: Github / Github CLI
 
 Tools on Windows:
 - linux compatibility layer: WSL2
@@ -16,6 +17,7 @@ Tools on Windows:
 - shell: zsh + OhMyZsh for easier usability
 - text editor: Visual Studio Code (VS Code)
 - virtualization: Docker
+- code repos: Github / Github CLI
 
 Setup is very different between Mac and windows. Make sure you follow the set up instructions that corresponds with your machine type. Mac now has two processor chip types: legacy intel chips and M1 chips for new MacBook Air's from 2021 and later. You may need to adjust your setup if you have an Mac with an M1 chip.
 
@@ -93,7 +95,7 @@ VS Code is a text editor that offers multiple features such as text hihglighting
 5. Pin VS Code to your doc if you'll be using it frequently.
 
 ## Docker (virtualization) installation
-**Follow the links and instructions from [Docker Docs Installation](https://docs.docker.com/get-docker/).** <br>
+**Follow the links and instructions from [Docker Docs Installation](https://docs.docker.com/get-docker/).**  It's stronglyl recommend that you follow the instructions to install Docker from the web ui rather than Homebrew Cask. <br>
 
 The Docker Desktop installation includes Docker Engine, Docker CLI client, Docker Compose, Docker Content Trust, Kubernetes, and Credential Helper. Make sure you have all these. <br>
 
@@ -103,5 +105,28 @@ Once docker desktop is installed, open the Docker app on your local machine. Nav
 **Tips for Mac users**:
 - There's no need to create a separate linux virtual machine.
 - Avoid using a package manager like Brew for the install. (I did it this way first and couldn't get my Airflow webserver to run.) <br>
+- if you have an M1 chip you may need to take additional steps before you can run airflow. This [website](https://github.com/apache/airflow/issues/15635) may be helpful for you.
 
-# Local Environment Setup for Widows - more info to be populated...
+## Github CLI
+[Documentation](https://docs.github.com/en)
+
+Code should be saved in GitHub code repositories. GitHub enables storing code remotely and locally simultaneously as well as collaboration with versioning and branching. 
+
+The GitHub CLI is a local installation that can help you to more quickly clone repositories and otherwise interact with the remote.
+
+- Create a GitHub account if you don't already have one. You can sign up from the [GitHub home page](https://github.com/).
+- Install the GitHub CLI locally using Homebrew. To install the GitHub CLI type the following into your terminal and hit **return**:
+```
+brew install gh
+```
+
+If you are unfamiliar with GitHub be sure to review the documentation and practice the following: 
+- clone a repository
+- create a new branch
+- make changes to a file and commit them
+- push the code to the new branch you created
+
+<!-- The --- tutorial is a good place to start. NEED TO FIND A TUTORIAL TO RECOMMEND!!! -->
+
+# Local Environment Setup for Widows 
+More info to be populated soon...
