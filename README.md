@@ -21,18 +21,18 @@ Setup is very different between Mac and windows. Make sure you follow the set up
 
 # Local Envionment Setup for Mac
 ## iterm2 (terminal) installation
-(Download)[https://iterm2.com/index.html], (Documentation)[https://iterm2.com/documentation-one-page.html#documentation-highlights.html]
+[Download](https://iterm2.com/index.html), [Documentation](https://iterm2.com/documentation-one-page.html#documentation-highlights.html)
 <br>
 1. Review the iterm2 documentation to understand its benefits and features 
-2. (Download iterm2)[https://iterm2.com/] from the official website to your local 'downloads' directory (the 'downloads' is the preconfigured defualt download directory on Mac).
+2. [Download iterm2](https://iterm2.com/) from the official website to your local 'downloads' directory (the 'downloads' is the preconfigured defualt download directory on Mac).
 3. Drag the iterm2 from your local 'downloads' folder to 'applications'.
 4. Open iterm2 from applications.
 5. Pin iterm2 to your doc if you'll be using it frequently.
 
 ## homebrew (package manager) installation
-(Documentation)[https://brew.sh/]
+[Documentation](https://brew.sh/)
 <br>
-1. Review the homebrew (Documentation)[https://brew.sh/] to understand how to use it 
+1. Review the homebrew [Documentation](https://brew.sh/) to understand how to use it 
 2. Copy and paste the following into your terminal and hit **return**:
 ```
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)
@@ -72,9 +72,9 @@ brew install zsh
 Now confirm again whether zsh is installed.
 
 ### OhMyZsh shell configuration setup
-(download)[https://ohmyz.sh/], [documentation](https://github.com/ohmyzsh/ohmyzsh/wiki)
+[download](https://ohmyz.sh/), [documentation](https://github.com/ohmyzsh/ohmyzsh/wiki)
 
-The OhMyZsh shell configuration will help you work faster in your shell by adding additional features such as copy/paste with keyboard shortcuts, text highlighting, text serching, autocomplete, and more. You can update the zsh configuration for a specific (theme)[https://github.com/ohmyzsh/ohmyzsh/wiki/Themes] by modifying your .zsrch file. 
+The OhMyZsh shell configuration will help you work faster in your shell by adding additional features such as copy/paste with keyboard shortcuts, text highlighting, text serching, autocomplete, and more. You can update the zsh configuration for a specific [theme](https://github.com/ohmyzsh/ohmyzsh/wiki/Themes) by modifying your .zsrch file. 
 
 To install OhMyZsh, copy the following paste it into your terminal and hit **enter**:
 ```
@@ -84,12 +84,24 @@ $ sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/instal
 ## VS Code (text editor) installation
 VS Code is a text editor that offers multiple features such as text hihglighting for python and sql, soure links, search/replace and more. 
 
-(Download)[https://code.visualstudio.com/download], (Documentation)[https://code.visualstudio.com/docs]
+[Download](https://code.visualstudio.com/download), [Documentation](https://code.visualstudio.com/docs]
 <br>
 1. Review the VS Code documentation to understand its benefits and features 
-2. (Download VS Code)[https://code.visualstudio.com/download] from the official website to your local 'downloads' directory (the 'downloads' is the preconfigured defualt download directory on Mac).
+2. (Download)[https://code.visualstudio.com/download] VS Code from the official website to your local 'downloads' directory (the 'downloads' is the preconfigured defualt download directory on Mac).
 3. Drag the VS Code from your local 'downloads' folder to 'applications'.
 4. Open VS Code from applications.
 5. Pin VS Code to your doc if you'll be using it frequently.
+
+## Docker (virtualization) installation
+**Follow the links and instructions from [Docker Docs Installation](https://docs.docker.com/get-docker/).** <br>
+
+The Docker Desktop installation includes Docker Engine, Docker CLI client, Docker Compose, Docker Content Trust, Kubernetes, and Credential Helper. Make sure you have all these. <br>
+
+**Update your Docker settings**: <br>
+Once docker desktop is installed, open the Docker app on your local machine. Navigate to 'settings' --> 'resources' --> 'memory'. Set memory to 4GB if it is less than that. <br>
+
+**Tips for Mac users**:
+- There's no need to create a separate linux virtual machine.
+- Avoid using a package manager like Brew for the install. (I did it this way first and couldn't get my Airflow webserver to run.) <br>
 
 # Local Environment Setup for Widows - more info to be populated...
